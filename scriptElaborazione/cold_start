@@ -1,0 +1,17 @@
+#!/bin/bash
+
+declare -A PID
+
+for func in "helloJava" "helloNode" "helloRuby" "helloPy"
+do 
+	> "$func"_out.txt
+	./cold_start_invocation "$func" "$func"_out.txt &
+	PID["$func"]=$!
+done
+
+echo COLD_STARTER. Waiting for all.
+for p in ${PID[@]}
+do
+	wait "$p"
+	echo COLD_STARTED. Waited "$p".
+done

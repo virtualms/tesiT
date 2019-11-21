@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function invoke(){
+	aws lambda invoke --function-name "$1"  "$2" --log-type Tail >> "$FUNC"_cold.txt
+}
+
+if test $# -ne 2
+	then echo Usage: fun-name outputfile
+	exit 1
+fi
+
+FUNC="$1"
+FILE="$2"
+> "$FUNC"_cold.txt
+
+for i in {1..10}
+	do invoke "$FUNC" "$FILE"
+	echo  "$FUNC". Cycle "$i" to 10: done. Sleeping...
+	sleep 2400
+done
+
+echo "$FUNC": Done!

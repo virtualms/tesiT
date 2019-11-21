@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then
+	echo Usage: fin-to-elaborate
+fi
+
+FILE="$1"
+BASE=$(echo "$FILE" | awk -F'.' '{ print $1 }')
+> "$BASE"_inits.txt
+
+cat "$FILE" | grep "LogRes" --line-buffered | while read line 
+	do echo "$line" | 
+	awk -F': ' '{ print $2 }' | 
+	sed -e 's/[\"\,]//g' | 
+	base64 -d |
+	grep 'Init Duration:' | 
+	awk -F'Init Duration: ' '{ print $2 }' | 
+	cut -d' ' -f1 >> "$BASE"_inits.txt 
+done

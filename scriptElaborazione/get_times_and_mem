@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if test $# -ne 1
+then	
+	echo Usage: fin
+	exit 1
+fi
+
+IN="$1"
+BASE=$(echo "$IN" | awk -F'.' '{ print $1 }')
+OUT_TIMES="$BASE"_times.txt
+
+> "$OUT_TIMES"
+
+cat "$IN" | grep --line-buffered REPORT | while read line  
+	do echo $line | awk -F'Duration: ' '{ print $2 }' | cut -d' ' -f1 
+	done >> "$OUT_TIMES"
+
+
+OUT_MEM="$BASE"_memory.txt
+> "$OUT_MEM"
+cat "$IN" | grep --line-buffered REPORT | while read line  
+	do echo $line | awk -F'Used: ' '{ print $2 }' | cut -d' ' -f1 
+	done >> "$OUT_MEM"
+
+
