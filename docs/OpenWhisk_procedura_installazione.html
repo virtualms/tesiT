@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>procedura_installazione</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="installare-openwhisk-su-docker">Installare OpenWhisk su Docker</h1>
+<p>Tratto da <a href="http://jamesthom.as/blog/2018/01/19/starting-openwhisk-in-sixty-seconds/">Jamesthom</a> e <a href="https://openwhisk.apache.org/documentation.html#openwhisk_deployment">OpenWhisk docs</a></p>
+<h3 id="installare-docker">1. INSTALLARE DOCKER</h3>
+<p><a href="https://runnable.com/docker/install-docker-on-linux">https://runnable.com/docker/install-docker-on-linux</a></p>
+<blockquote>
+<p>$ sudo apt-get install <a href="http://docker.io">docker.io</a><br>
+$ sudo service docker start<br>
+$ sudo docker run hello-world</p>
+</blockquote>
+<p>Se è tutto ok si ottiene il messaggio :</p>
+<blockquote>
+<p>Hello from Docker!<br>
+This message shows that your installation appears to be working correctly.</p>
+</blockquote>
+<blockquote>
+<p>To generate this message, Docker took the following steps:</p>
+<ol>
+<li>The Docker client contacted the Docker daemon.</li>
+<li>The Docker daemon pulled the “hello-world” image from the Docker Hub.<br>
+(amd64)</li>
+<li>The Docker daemon created a new container from that image which runs the<br>
+executable that produces the output you are currently reading.</li>
+<li>The Docker daemon streamed that output to the Docker client, which sent it<br>
+to your terminal.</li>
+</ol>
+</blockquote>
+<p><em>Far partire il demone dockerd all’avvio del sistema</em></p>
+<blockquote>
+<p>$ sudo systemctl enable docker</p>
+</blockquote>
+<h3 id="installare-docker-compose">2. INSTALLARE DOCKER COMPOSE</h3>
+<p>Da <a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
+<blockquote>
+<p>$ sudo curl -L “<a href="https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$">https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$</a>(uname -s)-$(uname -m)” -o /usr/local/bin/docker-compose</p>
+</blockquote>
+<blockquote>
+<p>$ sudo chmod +x /usr/local/bin/docker-compose</p>
+</blockquote>
+<p>Testare che docker sia stato installato correttamente</p>
+<blockquote>
+<p>$ docker-compose --version</p>
+</blockquote>
+<p><strong>Nota</strong>: si consiglia di installare <code>npm</code></p>
+<h3 id="installare-openwhisk-su-docker-compose">3. INSTALLARE OPENWHISK SU DOCKER-COMPOSE</h3>
+<p>Da <a href="https://openwhisk.apache.org/documentation.html#openwhisk_deployment">https://openwhisk.apache.org/documentation.html#openwhisk_deployment</a></p>
+<blockquote>
+<p>$ git clone <a href="https://github.com/apache/openwhisk-devtools.git">https://github.com/apache/openwhisk-devtools.git</a><br>
+$ cd openwhisk-devtools/docker-compose<br>
+$ sudo make quick-start</p>
+</blockquote>
+<p>Vedere se sono presenti i container di openwhisk</p>
+<blockquote>
+<p>$ docker ps --format “{{.ID}}: {{.Names}} {{.Image}}”</p>
+</blockquote>
+<h3 id="istallare-wsk-cli">4. ISTALLARE WSK CLI</h3>
+<p>Installare homebrew</p>
+<blockquote>
+<p>$ sh -c “$(curl -fsSL <a href="https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh">https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh</a>)”</p>
+</blockquote>
+<p><em>Add to path</em></p>
+<blockquote>
+<p>$ test -d ~/.linuxbrew &amp;&amp; eval $(~/.linuxbrew/bin/brew shellenv)<br>
+$ test -d /home/linuxbrew/.linuxbrew &amp;&amp; eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)<br>
+$ test -r ~/.bash_profile &amp;&amp; echo “eval $($(brew --prefix)/bin/brew shellenv)” &gt;&gt;~/.bash_profile<br>
+$ echo “eval $($(brew --prefix)/bin/brew shellenv)” &gt;&gt;~/.profile</p>
+</blockquote>
+<p><em>Vedere se funziona</em></p>
+<blockquote>
+<p>$ brew install hello</p>
+</blockquote>
+<p>Installare OpenWhisk</p>
+<blockquote>
+<p>$ brew update<br>
+$ brew install wsk</p>
+</blockquote>
+<p>Verificare se funziona</p>
+<blockquote>
+<p>$ wsk --help</p>
+</blockquote>
+<h3 id="settare-il-wsk-cli">5.  SETTARE IL WSK CLI</h3>
+<p>Configurare il CLI in locale. AUTH_KEY presente sulla documentazione</p>
+<blockquote>
+<p>$ wsk property set --apihost localhost --auth AUTH_KEY namespace guest --insecure<br>
+$ wsk property get --insecure</p>
+</blockquote>
+<p><strong>ATTENZIONE</strong>:</p>
+<ul>
+<li>
+<p>Da <a href="https://github.com/apache/openwhisk/blob/master/docs/cli.md#openwhisk-cli">Git</a> If you are using a local OpenWhisk deployment with a self-signed SSL certificate,<br>
+you can use --insecure to bypass certificate validation.<br>
+USARE <code>--insecure</code> SEMPRE per TUTTO</p>
+</li>
+<li>
+<p>Non è <code>--namespace</code> come indicato ma <code>namespace</code></p>
+</li>
+</ul>
+<h3 id="testarne-il-funzionamento">6. TESTARNE IL FUNZIONAMENTO</h3>
+<p>Creare helloworld su Node.js</p>
+<blockquote>
+<p>$ wsk action create hello hello.js<br>
+$ wsk action list<br>
+$ wsk action invoke -r hello -p name James<br>
+$ wsk activation list</p>
+</blockquote>
+<h3 id="post-istallazione">7. POST ISTALLAZIONE</h3>
+<p>Su <code>openwhisk-devtools/docker-compose</code> per far partire le istanze di OpenWhisk</p>
+<blockquote>
+<p>$ sudo make run</p>
+</blockquote>
+<p>Controllarne l’esistenza</p>
+<blockquote>
+<p>$ sudo docker ps --format “{{.ID}}: {{.Names}} {{.Image}}”</p>
+</blockquote>
+<p>Terminare OpenWhisk</p>
+<blockquote>
+<p>$ sudo make stop</p>
+</blockquote>
+</div>
+</body>
+
+</html>

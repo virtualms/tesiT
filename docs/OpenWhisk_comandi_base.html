@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenWhisk_comandi_base</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="comandi-base-openwhisk">Comandi base OpenWhisk</h1>
+<p><a href="https://github.com/apache/openwhisk/blob/master/docs/actions.md">https://github.com/apache/openwhisk/blob/master/docs/actions.md</a><br>
+<em>Nota</em>: in locale utilizza sempre il flag <code>-i</code> o <code>--insecure</code></p>
+<p><strong>Visualizza tutti i comandi</strong></p>
+<blockquote>
+<p>$ wsk --help</p>
+</blockquote>
+<p><strong>Configurazione</strong></p>
+<blockquote>
+<p>$ wsk property set --apihost API_HOST --auth AUTH_KEY</p>
+</blockquote>
+<p><em>Namespace guest</em></p>
+<blockquote>
+<p>$ wsk property get<br>
+$ wsk list -v</p>
+</blockquote>
+<p><strong>Gestione azioni(funzioni)</strong><br>
+<em>Azioni sample</em>: whisk.system/samples<br>
+<em>Create</em></p>
+<blockquote>
+<p>$ wsk action create hello hello.js<br>
+$ wsk action create sequenceOfActions --sequence hello1,hello2</p>
+</blockquote>
+<p><em>Update</em></p>
+<blockquote>
+<p>$ wsk action update hello hello.js</p>
+</blockquote>
+<p><em>Delete</em></p>
+<blockquote>
+<p>$ wsk action delete greeting</p>
+</blockquote>
+<p><em>List</em></p>
+<blockquote>
+<p>$ wsk action list</p>
+</blockquote>
+<p><em>Get</em></p>
+<blockquote>
+<p>$ wsk get action hello</p>
+</blockquote>
+<p><strong>Invocazioni</strong></p>
+<ul>
+<li>asinc</li>
+</ul>
+<blockquote>
+<p>$ wsk action invoke -r hello -p name Vincenzo<br>
+$ wsk action invoke greeting --result</p>
+</blockquote>
+<ul>
+<li>sinc</li>
+</ul>
+<blockquote>
+<p>$ wsk action invoke hello --blocking</p>
+</blockquote>
+<p><strong>Cercare funzioni invocate</strong></p>
+<blockquote>
+<p>$ wsk activation list [–full, --limit LIM, --since SINCE]<br>
+$ wsk activation get --last<br>
+$ wsk activation result &lt;ACTIVATION_ID&gt;<br>
+$ wsk activation logs <br>
+$ wsk activation logs  --strip : only meta</p>
+</blockquote>
+<p><strong>Trigger</strong></p>
+<blockquote>
+<p>$ wsk trigger create myTrigger<br>
+$ wsk trigger delete myTrigger<br>
+$ wsk trigger list</p>
+</blockquote>
+<p><em>Fire a trigger</em></p>
+<blockquote>
+<p>$ wsk trigger fire  --param name Bob --param place NYC</p>
+</blockquote>
+<p><strong>Rules</strong><br>
+<em>Collegare un ruolo a un trigger</em></p>
+<blockquote>
+<p>$ wsk rule create myRule myTrigger myAction</p>
+</blockquote>
+<p><em>Fire: verranno invocate tutte le action collegate a myTrigger tramite myRule</em></p>
+<blockquote>
+<p>$ wsk trigger fire myTrigger --param name Bob --param place NYC</p>
+</blockquote>
+<p><strong>Visionare action output</strong><br>
+<em>Loop di monitoring</em></p>
+<blockquote>
+<p>$ wsk activation poll</p>
+</blockquote>
+<p><strong>Codici result</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Codice</th>
+<th>Significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>success</td>
+</tr>
+<tr>
+<td>1</td>
+<td>app error</td>
+</tr>
+<tr>
+<td>2</td>
+<td>action developer error</td>
+</tr>
+<tr>
+<td>3</td>
+<td>whisk internal error</td>
+</tr>
+</tbody>
+</table><p><strong>Web Interaction</strong> `<br>
+<em>Creare un’azione web</em></p>
+<blockquote>
+<p>wsk action create /guest/demo/hello hello.js --web true</p>
+</blockquote>
+<p><em>Ottere URL</em></p>
+<blockquote>
+<p>wsk action get /guest/demo/hello --url</p>
+</blockquote>
+<p><em>Invocazione con curl</em></p>
+<blockquote>
+<p>curl <a href="https://$">https://$</a>{APIHOST}/api/v1/web/guest/demo/hello.http?name=V</p>
+</blockquote>
+</div>
+</body>
+
+</html>

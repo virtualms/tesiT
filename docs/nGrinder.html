@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nGrinder</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="ngrinder">nGrinder</h1>
+<p>Tratto da:<br>
+<a href="https://cwiki.apache.org/confluence/display/OPENWHISK/Getting+Started+with+nGrinder">https://cwiki.apache.org/confluence/display/OPENWHISK/Getting+Started+with+nGrinder</a><br>
+<a href="https://hub.docker.com/r/ngrinder/controller/">https://hub.docker.com/r/ngrinder/controller/</a></p>
+<p><em>Pull the controller with docker</em></p>
+<blockquote>
+<p>$ docker run -d -v ~/ngrinder-controller:/opt/ngrinder-controller -p 80:80 -p 16001:16001 -p 12000-12009:12000-12009 ngrinder/controller:3.4</p>
+</blockquote>
+<p>#Pull the agent</p>
+<blockquote>
+<p>$ docker run -v ~/ngrinder-agent:/opt/ngrinder-agent -d ngrinder/agent:3.4 ${CONTROLLER_IP}:80</p>
+</blockquote>
+<p><em>Risultato</em></p>
+<blockquote>
+<p>vms@ubuntu:~$ sudo docker ps --format “{{.ID}}: {{.Names}} {{.Image}}”<br>
+add81cc9db78: suspicious_torvalds ngrinder/agent:3.4<br>
+4a4450460e95: suspicious_almeida ngrinder/controller:3.4</p>
+</blockquote>
+<hr>
+<p><strong>Uso del .jar per l’agent</strong></p>
+<p>Da <a href="https://github.com/naver/ngrinder/wiki/Installation-Guide">qui</a></p>
+<p>Assicurarsi di avere cigar</p>
+<blockquote>
+<p>cp ./libsigar-amd64-linux.sp /usr/lib</p>
+</blockquote>
+<p>Scaricare l’agent dal controller ed eseguire</p>
+<blockquote>
+<p>./run_agent.sh</p>
+</blockquote>
+<p>In seguito accettare l’agent dall’interfaccia grafica del controller</p>
+<p><em>USATO</em>: controller su container ed agent Java</p>
+</div>
+</body>
+
+</html>
