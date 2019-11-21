@@ -1,21 +1,13 @@
 exports.handler =  async (event) => {
-
-    //time
-    var d = new Date();
-    var start = d.getTime();
     
     //find prime
     const value = 1500000;
     eratostene(value);
     
-    //responde
-    d = new Date();
-    var end = d.getTime();
-    var duration = end - start;
-    
+    //response
     const response = {
         statusCode: 200,
-        body: JSON.stringify('Done_' + start + "_" + end + "_" + duration),
+        body: JSON.stringify('Done'),
     };
     
     return response;
