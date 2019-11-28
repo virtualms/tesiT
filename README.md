@@ -13,3 +13,5 @@ Repository della tesi T.
 
 * `lambdaRawData` contiene i dati grezzi ottenuti da CloudWatch
 
+* `ow_prestazioni` contiene le prestazioni ottenute con OpenWhisk
+
