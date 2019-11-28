@@ -1,0 +1,714 @@
+ok: got activation 6ba5c511c0b3471ea5c511c0b3471ea1
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "6ba5c511c0b3471ea5c511c0b3471ea1",
+    "start": 1574885154360,
+    "end": 1574885155159,
+    "duration": 799,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:05:55.15816362Z  stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 3659
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 795
+        }
+    ],
+    "publish": false
+}
+ok: got activation 4a70f26ae50e49fdb0f26ae50eb9fd4a
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "4a70f26ae50e49fdb0f26ae50eb9fd4a",
+    "start": 1574885756890,
+    "end": 1574885757589,
+    "duration": 699,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:15:57.588643365Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5348
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 696
+        }
+    ],
+    "publish": false
+}
+ok: got activation 2a420c2b4fea4110820c2b4fea8110be
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "2a420c2b4fea4110820c2b4fea8110be",
+    "start": 1574886357454,
+    "end": 1574886358257,
+    "duration": 803,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:25:58.256061002Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5076
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 799
+        }
+    ],
+    "publish": false
+}
+ok: got activation 0d0d5a07baa4448d8d5a07baa4948dde
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "0d0d5a07baa4448d8d5a07baa4948dde",
+    "start": 1574886958357,
+    "end": 1574886959111,
+    "duration": 754,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:35:59.110116681Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5070
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 750
+        }
+    ],
+    "publish": false
+}
+ok: got activation e0cb0850c5da43208b0850c5da33203e
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "e0cb0850c5da43208b0850c5da33203e",
+    "start": 1574887559686,
+    "end": 1574887560233,
+    "duration": 547,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:46:00.233369879Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5473
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 545
+        }
+    ],
+    "publish": false
+}
+ok: got activation 09468594676440bd868594676470bd83
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "09468594676440bd868594676470bd83",
+    "start": 1574888160368,
+    "end": 1574888161169,
+    "duration": 801,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T20:56:01.168526563Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5201
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 798
+        }
+    ],
+    "publish": false
+}
+ok: got activation 5ac789ec5bdd45e58789ec5bdd05e590
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "5ac789ec5bdd45e58789ec5bdd05e590",
+    "start": 1574888761241,
+    "end": 1574888761999,
+    "duration": 758,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:06:01.998041174Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5139
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 754
+        }
+    ],
+    "publish": false
+}
+ok: got activation 3bafa300e1be4a64afa300e1beda6481
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "3bafa300e1be4a64afa300e1beda6481",
+    "start": 1574889362404,
+    "end": 1574889363041,
+    "duration": 637,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:16:03.040030515Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5377
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 634
+        }
+    ],
+    "publish": false
+}
+ok: got activation c70c1afe329a43f08c1afe329a03f090
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "c70c1afe329a43f08c1afe329a03f090",
+    "start": 1574889969258,
+    "end": 1574889969845,
+    "duration": 587,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:26:09.845260907Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 11078
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 585
+        }
+    ],
+    "publish": false
+}
+ok: got activation bc9910ba9e504dc29910ba9e50adc2ee
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "bc9910ba9e504dc29910ba9e50adc2ee",
+    "start": 1574890564793,
+    "end": 1574890565535,
+    "duration": 742,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:36:05.535327301Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5296
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 738
+        }
+    ],
+    "publish": false
+}
+ok: got activation e392cd7704b04c4c92cd7704b01c4ce9
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "e392cd7704b04c4c92cd7704b01c4ce9",
+    "start": 1574891166154,
+    "end": 1574891166850,
+    "duration": 696,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:46:06.849261639Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5551
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 692
+        }
+    ],
+    "publish": false
+}
+ok: got activation 2d3fb361bdb543babfb361bdb5c3bafd
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "2d3fb361bdb543babfb361bdb5c3bafd",
+    "start": 1574891766858,
+    "end": 1574891767548,
+    "duration": 690,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-27T21:56:07.547456816Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 5300
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 687
+        }
+    ],
+    "publish": false
+}
+{
+    "namespace": "guest",
+    "name": "helloPy",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "6834b21020e64abbb4b21020e68abbe1",
+    "start": 1574942629430,
+    "end": 1574942630111,
+    "duration": 681,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "greeting": "Hello stranger!"
+        }
+    },
+    "logs": [
+        "2019-11-28T12:03:50.111130781Z stdout: Hello stranger!"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloPy"
+        },
+        {
+            "key": "waitTime",
+            "value": 3246
+        },
+        {
+            "key": "kind",
+            "value": "python:3"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 679
+        }
+    ],
+    "publish": false
+}

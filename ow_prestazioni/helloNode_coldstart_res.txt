@@ -1,0 +1,792 @@
+ok: got activation fe05a2da20a8444585a2da20a8e44594
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "fe05a2da20a8444585a2da20a8e44594",
+    "start": 1574885161255,
+    "end": 1574885161473,
+    "duration": 218,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10222
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 206
+        }
+    ],
+    "publish": false
+}
+ok: got activation 263fda4ea4704ed9bfda4ea4700ed99f
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "263fda4ea4704ed9bfda4ea4700ed99f",
+    "start": 1574885763060,
+    "end": 1574885763327,
+    "duration": 267,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 11211
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 257
+        }
+    ],
+    "publish": false
+}
+ok: got activation bc35bacf452b4512b5bacf452b551226
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "bc35bacf452b4512b5bacf452b551226",
+    "start": 1574886363110,
+    "end": 1574886363381,
+    "duration": 271,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10424
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 260
+        }
+    ],
+    "publish": false
+}
+ok: got activation 02b09649795b48fdb09649795bc8fd9d
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "02b09649795b48fdb09649795bc8fd9d",
+    "start": 1574886964057,
+    "end": 1574886964433,
+    "duration": 376,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10454
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 364
+        }
+    ],
+    "publish": false
+}
+ok: got activation 143ddbb0b7ea4ac6bddbb0b7eaeac653
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "143ddbb0b7ea4ac6bddbb0b7eaeac653",
+    "start": 1574887565053,
+    "end": 1574887565306,
+    "duration": 253,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10510
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 245
+        }
+    ],
+    "publish": false
+}
+ok: got activation 2fa7981a0ed44850a7981a0ed4f850bb
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "2fa7981a0ed44850a7981a0ed4f850bb",
+    "start": 1574888166181,
+    "end": 1574888166449,
+    "duration": 268,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10692
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 257
+        }
+    ],
+    "publish": false
+}
+ok: got activation fac099f6ccac419d8099f6ccac119d61
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "fac099f6ccac419d8099f6ccac119d61",
+    "start": 1574888767028,
+    "end": 1574888767353,
+    "duration": 325,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10627
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 313
+        }
+    ],
+    "publish": false
+}
+ok: got activation 7d114ff2ad814467914ff2ad81d467a8
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "7d114ff2ad814467914ff2ad81d467a8",
+    "start": 1574889367923,
+    "end": 1574889368195,
+    "duration": 272,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10567
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 260
+        }
+    ],
+    "publish": false
+}
+ok: got activation 53fc4af007664c51bc4af007660c51f4
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "53fc4af007664c51bc4af007660c51f4",
+    "start": 1574890010361,
+    "end": 1574890010633,
+    "duration": 272,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 51532
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 260
+        }
+    ],
+    "publish": false
+}
+ok: got activation 16176a392e194925976a392e1989254a
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "16176a392e194925976a392e1989254a",
+    "start": 1574890570532,
+    "end": 1574890570854,
+    "duration": 322,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10565
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 310
+        }
+    ],
+    "publish": false
+}
+ok: got activation c7ca72ca85414d118a72ca85416d11ae
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "c7ca72ca85414d118a72ca85416d11ae",
+    "start": 1574891171970,
+    "end": 1574891172242,
+    "duration": 272,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10979
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 261
+        }
+    ],
+    "publish": false
+}
+ok: got activation 8782ad8f60a949ee82ad8f60a9d9ee08
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "8782ad8f60a949ee82ad8f60a9d9ee08",
+    "start": 1574891772402,
+    "end": 1574891772732,
+    "duration": 330,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 10477
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 316
+        }
+    ],
+    "publish": false
+}
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "8ffd0317dbe14c5abd0317dbe1fc5acd",
+    "start": 1574942194547,
+    "end": 1574942194865,
+    "duration": 318,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 3998
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 307
+        }
+    ],
+    "publish": false
+}
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "772c9fd077a8439cac9fd077a8039cb9",
+    "start": 1574942195091,
+    "end": 1574942195356,
+    "duration": 265,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 4339
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 255
+        }
+    ],
+    "publish": false
+}
+{
+    "namespace": "guest",
+    "name": "helloNode",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "c1f4c8329d0a4a28b4c8329d0afa2881",
+    "start": 1574942196075,
+    "end": 1574942196395,
+    "duration": 320,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, World!"
+        }
+    },
+    "logs": [],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/helloNode"
+        },
+        {
+            "key": "waitTime",
+            "value": 5148
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:10"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 308
+        }
+    ],
+    "publish": false
+}
+
